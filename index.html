@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cat Bubble Island — Un archipiélago de burbujas y gatitos</title>
+<meta name="description" content="Cat Bubble Island: un bubble shooter relajante donde rescatás gatitos, explorás islas de acuarela y coleccionás compañeros felinos. Gratis para jugar.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Cat Bubble Island">
+<meta property="og:description" content="Un bubble shooter relajante donde rescatás gatitos y explorás islas pintadas a mano.">
+<meta property="og:image" content="assets/img/screenshot-splash.jpg">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%232fa39a%22/><text x=%2250%22 y=%2266%22 font-size=%2260%22 text-anchor=%22middle%22>🐱</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;">Saltar al contenido</a>
+
+<header class="site-nav">
+  <div class="container">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Cat Bubble Island
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="#juego">El juego</a></li>
+        <li><a href="#como-jugar">Cómo se juega</a></li>
+        <li><a href="privacy.html">Privacidad</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="#descargar">Jugar gratis</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="navToggle">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-sun" aria-hidden="true"></div>
+
+    <svg class="palm palm-left" viewBox="0 0 200 220" aria-hidden="true">
+      <g fill="#4f7a4a" opacity="0.9">
+        <path d="M40 220 C 30 150, 10 90, -20 40 C 30 60, 55 100, 65 150 Z"/>
+        <path d="M55 220 C 60 140, 55 70, 30 10 C 75 45, 85 100, 78 160 Z"/>
+        <path d="M70 220 C 95 150, 110 90, 100 20 C 140 70, 135 130, 105 175 Z"/>
+        <path d="M85 220 C 130 170, 160 120, 165 55 C 190 110, 175 165, 130 195 Z"/>
+      </g>
+    </svg>
+    <svg class="palm palm-right" viewBox="0 0 200 220" aria-hidden="true">
+      <g fill="#3f6b45" opacity="0.9">
+        <path d="M40 220 C 30 150, 10 90, -20 40 C 30 60, 55 100, 65 150 Z"/>
+        <path d="M55 220 C 60 140, 55 70, 30 10 C 75 45, 85 100, 78 160 Z"/>
+        <path d="M70 220 C 95 150, 110 90, 100 20 C 140 70, 135 130, 105 175 Z"/>
+        <path d="M85 220 C 130 170, 160 120, 165 55 C 190 110, 175 165, 130 195 Z"/>
+      </g>
+    </svg>
+
+    <div class="bubbles-field" id="bubblesField" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">🐚 Disponible próximamente</span>
+        <h1 class="hero-title">Cat Bubble<span>Island</span></h1>
+        <p class="lede">Apuntá, disparate y combiná burbujas de colores para rescatar gatitos varados en un archipiélago pintado a mano. Sin prisa, sin estrés — solo vos, la marea y un ronroneo de fondo.</p>
+
+        <div class="store-badges" id="descargar">
+          <a class="store-badge" href="#" aria-label="Descargar en Google Play (próximamente)">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 2.5C3 1.9 3.4 1.5 4 1.5C4.2 1.5 4.4 1.6 4.6 1.7L16.8 8.7L13.4 12L4.6 22.3C4.4 22.4 4.2 22.5 4 22.5C3.4 22.5 3 22.1 3 21.5V2.5Z" fill="#00E1FF"/><path d="M13.4 12L16.8 8.7L20.4 10.8C21.2 11.3 21.2 12.5 20.4 13L16.8 15.1L13.4 12Z" fill="#FFCC00"/><path d="M4.6 22.3L13.4 12L16.8 15.1L5.6 22.9C5.2 23.1 4.8 23 4.6 22.3Z" fill="#FF3D3D"/><path d="M4.6 1.7L13.4 12L16.8 8.7L5.6 1.1C5.2 0.9 4.8 1 4.6 1.7Z" fill="#00F076"/></svg>
+            <span class="store-text"><small>Disponible en</small><strong>Google Play</strong></span>
+          </a>
+          <a class="store-badge" href="#" aria-label="Descargar en App Store (próximamente)">
+            <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M17.05 12.34c-.03-2.5 2.04-3.7 2.14-3.76-1.17-1.71-2.98-1.94-3.62-1.97-1.54-.16-3 .9-3.78.9-.78 0-1.98-.88-3.26-.86-1.68.03-3.23.98-4.09 2.48-1.75 3.03-.45 7.5 1.25 9.95.83 1.2 1.82 2.55 3.12 2.5 1.25-.05 1.72-.8 3.23-.8 1.5 0 1.93.8 3.25.78 1.34-.02 2.19-1.22 3.01-2.42.95-1.39 1.34-2.73 1.36-2.8-.03-.01-2.6-1-2.63-3.99Z"/><path d="M14.7 4.9c.69-.84 1.16-2 1.03-3.16-1 .04-2.2.66-2.92 1.5-.64.74-1.2 1.94-1.05 3.07 1.1.09 2.24-.56 2.94-1.41Z"/></svg>
+            <span class="store-text"><small>Descargá en</small><strong>App Store</strong></span>
+          </a>
+        </div>
+        <p class="badge-note">Lanzamiento en fase de pulido — dejanos tu opinión cuando esté disponible 🐾</p>
+      </div>
+
+      <div class="hero-art">
+        <div class="phone">
+          <div class="phone-notch" aria-hidden="true"></div>
+          <img src="assets/img/screenshot-splash.jpg" alt="Pantalla de bienvenida de Cat Bubble Island, mostrando un gato atigrado en una playa al atardecer">
+        </div>
+        <div class="hero-cat-badge"><span class="paw">🐾</span> +25 gatitos por rescatar</div>
+      </div>
+    </div>
+
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,10 1440,50 L1440,110 L0,110 Z" fill="#2fa39a"></path></svg>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section features" id="juego">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" style="background:rgba(255,255,255,0.55);">🫧 El juego</span>
+        <h2 style="color:#fff;">Cada burbuja es un paso más cerca de un rescate</h2>
+        <p style="color:rgba(255,255,255,0.88);">Islas de acuarela, mecánicas simples y gatitos con personalidad propia. Pensado para partidas cortas y relajadas — perfecto para la fila del supermercado o antes de dormir.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="phone-frame"><img src="assets/img/screenshot-gameplay.jpg" alt="Captura de gameplay: tablero de burbujas rojas y azules con un gato guía en pantalla"></div>
+          <h3>Apuntá y combiná</h3>
+          <p>Disparos precisos, combos de 3 o más burbujas y niveles diseñados a mano — nunca abrumadores, siempre satisfactorios.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="phone-frame"><img src="assets/img/screenshot-level.jpg" alt="Captura de la pantalla de nivel mostrando objetivos, estrellas y potenciadores"></div>
+          <h3>Progresá a tu ritmo</h3>
+          <p>Objetivos claros, tres estrellas por nivel y potenciadores opcionales que nunca son obligatorios para avanzar.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="phone-frame"><img src="assets/img/screenshot-beach.jpg" alt="Ilustración de un gato durmiendo en la playa rodeado de burbujas iridiscentes al atardecer"></div>
+          <h3>Un mundo para respirar</h3>
+          <p>Entre nivel y nivel, tus gatitos rescatados descansan en el santuario de la isla. Sin prisa, sin culpa, solo vos y la marea.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="wave" aria-hidden="true" style="transform: rotate(180deg);">
+      <svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,10 1440,50 L1440,110 L0,110 Z" fill="#fff8ec"></path></svg>
+    </div>
+  </section>
+
+  <!-- ================= HOW TO PLAY ================= -->
+  <section class="section howto" id="como-jugar">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">🎯 Tres pasos</span>
+        <h2>Cómo se juega</h2>
+        <p>Así de simple es tu primera partida — el resto lo aprendés jugando, sin tutoriales que interrumpan.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Elegí tu isla</h3>
+          <p>Cada archipiélago tiene su propio bioma, su propia paleta de acuarela y un gatito esperando ser rescatado al final.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Apuntá y disparate</h3>
+          <p>Combiná 3 o más burbujas del mismo color para hacerlas estallar. Limpiá el tablero antes de quedarte sin turnos.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Rescatá y coleccioná</h3>
+          <p>Cada isla completada libera un nuevo compañero felino, con su propia habilidad para ayudarte en la próxima partida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section" style="padding-top:0;">
+    <div class="cta-band">
+      <h2>Tu próximo gatito te está esperando</h2>
+      <p>Cat Bubble Island es gratis para jugar. Descargalo cuando esté disponible en tu tienda de aplicaciones.</p>
+      <div class="store-badges">
+        <a class="store-badge" href="#">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 2.5C3 1.9 3.4 1.5 4 1.5C4.2 1.5 4.4 1.6 4.6 1.7L16.8 8.7L13.4 12L4.6 22.3C4.4 22.4 4.2 22.5 4 22.5C3.4 22.5 3 22.1 3 21.5V2.5Z" fill="#00E1FF"/><path d="M13.4 12L16.8 8.7L20.4 10.8C21.2 11.3 21.2 12.5 20.4 13L16.8 15.1L13.4 12Z" fill="#FFCC00"/><path d="M4.6 22.3L13.4 12L16.8 15.1L5.6 22.9C5.2 23.1 4.8 23 4.6 22.3Z" fill="#FF3D3D"/><path d="M4.6 1.7L13.4 12L16.8 8.7L5.6 1.1C5.2 0.9 4.8 1 4.6 1.7Z" fill="#00F076"/></svg>
+          <span class="store-text"><small>Disponible en</small><strong>Google Play</strong></span>
+        </a>
+        <a class="store-badge" href="#">
+          <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M17.05 12.34c-.03-2.5 2.04-3.7 2.14-3.76-1.17-1.71-2.98-1.94-3.62-1.97-1.54-.16-3 .9-3.78.9-.78 0-1.98-.88-3.26-.86-1.68.03-3.23.98-4.09 2.48-1.75 3.03-.45 7.5 1.25 9.95.83 1.2 1.82 2.55 3.12 2.5 1.25-.05 1.72-.8 3.23-.8 1.5 0 1.93.8 3.25.78 1.34-.02 2.19-1.22 3.01-2.42.95-1.39 1.34-2.73 1.36-2.8-.03-.01-2.6-1-2.63-3.99Z"/><path d="M14.7 4.9c.69-.84 1.16-2 1.03-3.16-1 .04-2.2.66-2.92 1.5-.64.74-1.2 1.94-1.05 3.07 1.1.09 2.24-.56 2.94-1.41Z"/></svg>
+          <span class="store-text"><small>Descargá en</small><strong>App Store</strong></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Cat Bubble Island
+        </a>
+        <p>Un bubble shooter relajante hecho con cariño, acuarela digital y demasiado café. 🐾</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Juego</h4>
+          <ul>
+            <li><a href="#juego">El juego</a></li>
+            <li><a href="#como-jugar">Cómo se juega</a></li>
+            <li><a href="#descargar">Descargar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Política de privacidad</a></li>
+            <li><a href="terms.html">Términos de servicio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:hola@catbubbleisland.com">hola@catbubbleisland.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Cat Bubble Island. Todos los derechos reservados.</span>
+      <span>Hecho con 🫧 para amantes de los gatos.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
